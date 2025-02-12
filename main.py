@@ -68,7 +68,7 @@ while True:
             cv2.rectangle(frame, (x, y), (x + w, y + h), color, 2)
             cv2.putText(frame, label, (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
 
-    # Display the frame with bounding boxes
+    # Display the frame 
     cv2.imshow("Object Detector", frame)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
